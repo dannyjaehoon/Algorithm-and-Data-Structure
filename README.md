@@ -1,6 +1,6 @@
 # Algorithm-and-Data-Structure
 
-This repository is a collection of my implementations and study notes for fundamental **Data Structures**, **Sorting Algorithms**, and **LeetCode problems** in Java.
+This repository is a collection of my implementations and study notes for fundamental **Data Structures**, **Algorithms**, and **LeetCode problems** in Java.
 
 ## 🔍 Purpose
 This project aims to:
