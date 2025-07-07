@@ -9,8 +9,6 @@ This project aims to:
 - Practice writing clean, modular, and maintainable Java code.
 - Build a solid foundation for **technical interviews** and **problem solving**.
 
-
-
 ## 🧪 Language & Tools
 - Language: **Java**
 - IDE: IntelliJ IDEA
