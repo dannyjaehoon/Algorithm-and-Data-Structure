@@ -7,6 +7,10 @@ public class SubarraySumEqualsK {
     public int subarraySum(int[] nums, int k) {
         // since nums[i] can be a negative value, we can not use the sliding window
 
+        // Use prefix sum to store the sum up to the current index.
+        // Use a HashMap to record how many times a prefix sum has appeared.
+        // If currentSum - k has been seen before, it means there's a subarray that sums to k.
+
         // HashMap + Prefix Sum
         // nums = [1, 2, 3, -2, 1, 2, -1, 2]
         // k = 3
