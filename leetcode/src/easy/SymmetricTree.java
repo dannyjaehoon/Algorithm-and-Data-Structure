@@ -31,7 +31,7 @@ public class SymmetricTree {
         return dfs(t1.left, t2.right) && dfs(t1.right,  t2.left);
     }
 
-    public boolean isSymmetricBST(TreeNode root) {
+    public boolean isSymmetricBFS(TreeNode root) {
         if(root == null) return true;
 
         Queue<TreeNode> q = new LinkedList<>();
