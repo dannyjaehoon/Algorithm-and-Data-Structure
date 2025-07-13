@@ -1,6 +1,6 @@
 package easy;
 
-public class MaximumSubarray {
+public class MergeSortedArray {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
 
         // firstPointer indicates the last el of nums1 = 6
