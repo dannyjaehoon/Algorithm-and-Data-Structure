@@ -1,4 +1,4 @@
-package graphs;
+package graphs.directed_graph;
 
 import java.util.*;
 
