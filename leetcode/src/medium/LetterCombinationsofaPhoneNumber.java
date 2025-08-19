@@ -7,6 +7,16 @@ import java.util.Map;
 
 public class LetterCombinationsofaPhoneNumber {
     public List<String> letterCombinations(String digits) {
+        // Map digits (2–9) to letters and build combinations via DFS/backtracking.
+        // Each recursive call appends one letter from the mapping of the current digit.
+        // When sb.length() == digits.length(), the combination is complete; add it to results.
+
+        // Time-Complexity  O(4^n · n)
+        // Space-Complexity  O(4^n · n)
+
+        // 1. For input "23", walk me through your method step-by-step and list the final combinations in the order your code produces.
+        // 2. What is your recursion base case, and what should the function return when digits is empty ("")?
+        // 3. If the input contains '0' or '1', how would you handle it (skip, error, or custom mapping)? Explain briefly.
         if(digits.length() == 0) return new ArrayList<String>();
         List<String> res = new ArrayList<>();
         Map<Character, List<Character>> map = new HashMap<>();
