@@ -1,0 +1,162 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36" version="28.1.0">
+  <diagram name="페이지-1" id="i9W8n2XISs6BEfSWjjDv">
+    <mxGraphModel dx="4754" dy="5534" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="H6zTBNjA9fI-ZNXuUB1H-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="200" width="120" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="H6zTBNjA9fI-ZNXuUB1H-2" value="Load Balancer&lt;div&gt;&amp;amp;&lt;/div&gt;&lt;div&gt;API gateway&lt;/div&gt;&lt;div&gt;- authentication&lt;/div&gt;&lt;div&gt;- rate limiting&lt;/div&gt;&lt;div&gt;- SSL termination&lt;/div&gt;&lt;div&gt;-routing&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="70" width="120" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="H6zTBNjA9fI-ZNXuUB1H-3" value="File service" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="H6zTBNjA9fI-ZNXuUB1H-4" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="230" as="sourcePoint" />
+            <mxPoint x="530" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="H6zTBNjA9fI-ZNXuUB1H-5" value="Upload&lt;div&gt;file, file&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;metadata&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="395" y="133" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="H6zTBNjA9fI-ZNXuUB1H-6" value="blob storage&lt;div&gt;(s3)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="810" y="10" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="H6zTBNjA9fI-ZNXuUB1H-7" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="670" y="130" as="sourcePoint" />
+            <mxPoint x="800" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="H6zTBNjA9fI-ZNXuUB1H-8" value="request a pre-signed url" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="640" y="60" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="H6zTBNjA9fI-ZNXuUB1H-9" value="&lt;div&gt;file metadata&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="820" y="190" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="H6zTBNjA9fI-ZNXuUB1H-10" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="680" y="165" as="sourcePoint" />
+            <mxPoint x="800" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="H6zTBNjA9fI-ZNXuUB1H-11" value="write metadata" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="720" y="150" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="H6zTBNjA9fI-ZNXuUB1H-12" value="File metadata&lt;div&gt;- fileId&lt;/div&gt;&lt;div&gt;- folderId&lt;/div&gt;&lt;div&gt;- fileName&lt;/div&gt;&lt;div&gt;- mimeType&lt;/div&gt;&lt;div&gt;- size&lt;/div&gt;&lt;div&gt;- ownerId&lt;/div&gt;&lt;div&gt;- S3Link&lt;/div&gt;&lt;div&gt;- creation timestamp&lt;/div&gt;&lt;div&gt;- update timestamp&lt;/div&gt;&lt;div&gt;- status &quot;started&quot;&lt;/div&gt;&lt;div&gt;- chunks: [&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;{&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;id as a fingerprint,&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;status,&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;s3Link,&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;updatedAt&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;}&lt;br&gt;&lt;/div&gt;&lt;div&gt;]&lt;/div&gt;&lt;div&gt;- .. metadata&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="930" y="205" width="170" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="H6zTBNjA9fI-ZNXuUB1H-13" value="storing the raw bytes of the files&lt;div&gt;S3: multi-part upload&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="920" y="10" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="H6zTBNjA9fI-ZNXuUB1H-14" value="Get a file by fileId" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="450" y="190" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="H6zTBNjA9fI-ZNXuUB1H-16" value="" style="curved=1;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="140" y="190" as="sourcePoint" />
+            <mxPoint x="790" y="40" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="130" y="120" />
+              <mxPoint x="140" y="40" />
+              <mxPoint x="290" y="30" />
+              <mxPoint x="520" y="40" />
+              <mxPoint x="560" y="40" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="H6zTBNjA9fI-ZNXuUB1H-17" value="- download directly from s3&lt;div&gt;- upload directly to s3 with that pre-signed url&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="320" y="-5" width="260" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="H6zTBNjA9fI-ZNXuUB1H-19" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="260" y="330" as="sourcePoint" />
+            <mxPoint x="210" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="H6zTBNjA9fI-ZNXuUB1H-21" value="local folder" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="350" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="H6zTBNjA9fI-ZNXuUB1H-22" value="client app" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="240" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="H6zTBNjA9fI-ZNXuUB1H-24" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;1. Remote changed&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- pull for changes&lt;/div&gt;&lt;div&gt;- download the new file and replace&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;2. local changed&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- upload the changed files to remote&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Deep dive on sync&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;1. sync to be fast&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- adaptive polling&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- delta sync to only fetch changed chunks&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;2. sync to be consistent&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- polling the DB or event bus with cursor&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- reconciliation&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-225" y="85" width="240" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="H6zTBNjA9fI-ZNXuUB1H-25" value="Sync service" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="345" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="H6zTBNjA9fI-ZNXuUB1H-26" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="310" as="sourcePoint" />
+            <mxPoint x="530" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="H6zTBNjA9fI-ZNXuUB1H-27" value="Get changes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="450" y="305" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="H6zTBNjA9fI-ZNXuUB1H-28" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="330" as="sourcePoint" />
+            <mxPoint x="600" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="H6zTBNjA9fI-ZNXuUB1H-29" value="local db" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="295" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="H6zTBNjA9fI-ZNXuUB1H-31" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;High level structure may cause problems when handling large files due to the followings:&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;-&lt;/b&gt; has a limit of 10 megabyte in the post body&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;- the upload path is redundant (upload the file once to the file service and then upload it a second time to blob storage.)&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-180" y="-160" width="1080" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="H6zTBNjA9fI-ZNXuUB1H-32" value="upload large files : 50gb&lt;div&gt;- 50gb * 100mbps =&lt;/div&gt;&lt;div&gt;50GB = 50 × 1024 MB = &lt;strong data-end=&quot;385&quot; data-start=&quot;373&quot;&gt;51,200MB&lt;/strong&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1 Byte = 8 bits&lt;/div&gt;&lt;div&gt;100 Mbps = &lt;strong data-end=&quot;325&quot; data-start=&quot;297&quot;&gt;100 ÷ 8 MB/s = 12.5 MB/s&lt;/strong&gt;&lt;/div&gt;&lt;div&gt;&lt;strong data-end=&quot;325&quot; data-start=&quot;297&quot;&gt;&lt;br&gt;&lt;/strong&gt;&lt;/div&gt;&lt;div&gt;&lt;strong data-end=&quot;325&quot; data-start=&quot;297&quot;&gt;&amp;nbsp;51,200 ÷ 12.5 = &lt;strong data-end=&quot;470&quot; data-start=&quot;461&quot;&gt;4096 seconds&lt;/strong&gt;&lt;/strong&gt;&lt;/div&gt;&lt;div&gt;&lt;strong data-end=&quot;325&quot; data-start=&quot;297&quot;&gt;&lt;strong data-end=&quot;470&quot; data-start=&quot;461&quot;&gt;4096초 ÷ 60 =&amp;nbsp;&lt;/strong&gt;&lt;/strong&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;68.3 mins -&amp;gt; approximately 1hour 8mins&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-210" y="405" width="310" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="H6zTBNjA9fI-ZNXuUB1H-33" value="chunk files on client to 5mb chunk&lt;div&gt;fingerprint each chunk : hash(bytes)&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="145" y="543" width="210" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="H6zTBNjA9fI-ZNXuUB1H-34" value="&lt;h2 data-start=&quot;88&quot; data-end=&quot;134&quot;&gt;1. Split file into 5MB chunks&lt;/h2&gt;&lt;h2 data-start=&quot;88&quot; data-end=&quot;134&quot;&gt;2. Generate hash for each chunk&lt;/h2&gt;&lt;h2 data-start=&quot;88&quot; data-end=&quot;134&quot;&gt;&amp;nbsp; &amp;nbsp;- acts as fingerprint&lt;/h2&gt;&lt;h2 data-start=&quot;88&quot; data-end=&quot;134&quot;&gt;3. Upload chunks to blob storage&lt;/h2&gt;&lt;h2 data-start=&quot;88&quot; data-end=&quot;134&quot;&gt;&amp;nbsp; &amp;nbsp;- store chunkId(hash), status, s3Link&lt;/h2&gt;&lt;h2 data-start=&quot;88&quot; data-end=&quot;134&quot;&gt;4. Reassemble file on server&lt;/h2&gt;&lt;h2 data-start=&quot;88&quot; data-end=&quot;134&quot;&gt;&amp;nbsp; &amp;nbsp;- verify each chunk with hash&lt;/h2&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="155" y="590" width="350" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="H6zTBNjA9fI-ZNXuUB1H-36" value="using compression could make the size of the files smaller which increase the speed to upload" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-80" y="-52" width="520" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="H6zTBNjA9fI-ZNXuUB1H-37" value="How to make the sync service fast&lt;br&gt;1. websocket (x -&amp;gt; overkill)&lt;div&gt;2. long polling&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;(x -&amp;gt; overkill)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;3. periodically polling (best approach)&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-500" y="220" width="220" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="H6zTBNjA9fI-ZNXuUB1H-38" value="" style="endArrow=classic;html=1;rounded=0;entryX=1.011;entryY=0.524;entryDx=0;entryDy=0;entryPerimeter=0;exitX=-0.017;exitY=0.625;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="H6zTBNjA9fI-ZNXuUB1H-24" target="H6zTBNjA9fI-ZNXuUB1H-37">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="290" as="sourcePoint" />
+            <mxPoint x="270" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="H6zTBNjA9fI-ZNXuUB1H-39" value="event bus" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="483" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="H6zTBNjA9fI-ZNXuUB1H-40" value="" style="curved=1;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="640" y="180" as="sourcePoint" />
+            <mxPoint x="680" y="480" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="760" y="240" />
+              <mxPoint x="740" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="H6zTBNjA9fI-ZNXuUB1H-42" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="470" as="sourcePoint" />
+            <mxPoint x="600" y="420" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="600" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="H6zTBNjA9fI-ZNXuUB1H-44" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Folder&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- cursor (sync cursor)&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;-&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="193" width="140" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
